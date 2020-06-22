@@ -37,7 +37,7 @@ params:
     #latex: A_\mathrm{s}
   n_s: 0.9828
     #latex: n_\mathrm{s}
-  #H0: 71.1
+  #H0:
     #latex: H_0
   omega_b: 0.02228
     #latex: \Omega_\mathrm{b} h^2
