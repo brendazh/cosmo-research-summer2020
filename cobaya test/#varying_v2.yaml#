@@ -1,0 +1,49 @@
+theory:
+  classy:
+    path: /home1/brendazh/Repos/AxiCLASS/
+    extra_args:
+      non linear: hmcode
+      hmcode_min_k_max: 20
+      N_ncdm: 1
+      N_ur: 2.0328
+likelihood:
+  planck_2018_lowl.TT: null
+  planck_2018_lowl.EE: null
+  planck_2018_highl_plik.TTTEEE_lite: null
+  planck_2018_lensing.clik: null
+params:
+  n_axion: 2
+  log10_axion_ac:
+    prior:
+      min: -4.5
+      max: -2
+    ref:
+      min: -3
+      max: -2.5
+  log10_fraction_axion_ac:
+    prior:
+      min: -3
+      max: 3
+    ref:
+      min: -2
+      max: 2 
+  A_s:
+    value: 0.00000000223 
+    # taken from n=2 in paper best fit
+    latex: A_\mathrm{s}
+  n_s: 0.9828
+    latex: n_\mathrm{s}
+  H0:
+    latex: H_0
+  omega_b: 0.02228
+    latex: \Omega_\mathrm{b} h^2
+  omega_cdm: 0.1281
+    latex: \Omega_\mathrm{c} h^2
+  tau_reio: 0.083
+    latex: \tau_\mathrm{reio}
+sampler:
+  mcmc:
+    covmat: auto
+    drag: true
+    oversample_power: 0.4
+    proposal_scale: 1.9
