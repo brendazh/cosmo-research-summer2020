@@ -118,7 +118,7 @@ params:
     latex: r_\mathrm{drag}
 sampler:
   mcmc:
-    covmat: /home1/brendazh/data/planck_supp_data_and_covmats/base_plikHM_TTTEEE_lowl_lowE_lensing.covmat
+    covmat: /home1/brendazh/data/planck_supp_data_and_covmats/covmats/base_plikHM_TTTEEE_lowl_lowE_lensing.covmat
     drag: true
     oversample_power: 0.4
     proposal_scale: 1.9
