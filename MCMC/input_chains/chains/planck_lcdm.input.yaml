@@ -1,5 +1,6 @@
 theory:
   classy:
+    path: /home1/brendazh/Repos/AxiCLASS/
     extra_args:
       non linear: hmcode
       hmcode_min_k_max: 20
@@ -122,5 +123,6 @@ sampler:
     drag: true
     oversample_power: 0.4
     proposal_scale: 1.9
-    Rminus1_stop: 0.1
-output: chains/planck_lcdm
+output: planck_lcdm
+packages_path: null
+test: false
