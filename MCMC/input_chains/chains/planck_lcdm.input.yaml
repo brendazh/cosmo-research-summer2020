@@ -1,6 +1,5 @@
 theory:
   classy:
-    path: /Users/brendazhou/Cosmo/Repositories/AxiCLASS/
     extra_args:
       non linear: hmcode
       hmcode_min_k_max: 20
@@ -9,26 +8,9 @@ theory:
 likelihood:
   planck_2018_lowl.TT: null
   planck_2018_lowl.EE: null
-  planck_2018_highl_plik.TTTEEE: null
+  planck_2018_highl_plik.TTTEEE_lite: null
   planck_2018_lensing.clik: null
 params:
-#   n_axion:
-#     value: 2
-  log10_axion_ac:
-    prior:
-      min: -4.5
-      max: -3.5
-    ref:
-      dist: norm
-      loc: -4.13
-      scale: 0.1
-#   log10_fraction_axion_ac:
-#     prior:
-#       min: -3
-#       max: 3
-#     ref:
-#       min: -2
-#       max: 2 
   logA:
     prior:
       min: 1.61
@@ -134,15 +116,13 @@ params:
     latex: '{\rm{Age}}/\mathrm{Gyr}'
   rs_drag:
     latex: r_\mathrm{drag}
-  scf_tuning_index:
-    value: 0
-  scf_parameters:
-    value: 10000
 sampler:
   mcmc:
-    covmat: auto
+    covmat: /home1/brendazh/data/planck_supp_data_and_covmats/base_plikHM_TTTEEE_lowl_lowE_lensing.covmat
     drag: true
     oversample_power: 0.4
     proposal_scale: 1.9
-debug: true
-debug_file: test3.txt
+    Rminus1_stop: 0.1
+output: planck_lcdm
+packages_path: null
+test: false
