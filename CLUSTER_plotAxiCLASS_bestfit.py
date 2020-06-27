@@ -30,12 +30,12 @@ matplotlib.mathtext.rcParams['legend.fontsize']='medium'
 plt.rcParams["figure.figsize"] = [8.0,6.0]
 
 
-l_TT_low,Dl_TT_low,err_TT_low= np.loadtxt("/home1/brendazh/Repos/darkmatter-hubble-summer2020/DMPlots/data/CMB/COM_PowerSpect_CMB-TT-loL-full_R2.02.txt",unpack=True,usecols=(0,1,2))
-l_TE_low,Dl_TE_low,err_TE_low= np.loadtxt("/home1/brendazh/Repos/darkmatter-hubble-summer2020/DMPlots/data/CMB/COM_PowerSpect_CMB-TE-loL-full_R2.02.txt",unpack=True,usecols=(0,1,2))
-l_TT_high,Dl_TT_high,err_TT_high= np.loadtxt("/home1/brendazh/Repos/darkmatter-hubble-summer2020/DMPlots/data/CMB/COM_PowerSpect_CMB-TT-hiL-binned_R2.02.txt",unpack=True,usecols=(0,3,4))
-l_TE_high,Dl_TE_high,err_TE_high= np.loadtxt("/home1/brendazh/Repos/darkmatter-hubble-summer2020/DMPlots/data/CMB/COM_PowerSpect_CMB-TE-hiL-binned_R2.02.txt",unpack=True,usecols=(0,3,4))
-l_EE_low,Dl_EE_low,err_EE_low= np.loadtxt("/home1/brendazh/Repos/darkmatter-hubble-summer2020/DMPlots/data/CMB/COM_PowerSpect_CMB-EE-loL-full_R2.02.txt",unpack=True,usecols=(0,1,2))
-l_EE_high,Dl_EE_high,err_EE_high= np.loadtxt("/home1/brendazh/Repos/darkmatter-hubble-summer2020/DMPlots/data/CMB/COM_PowerSpect_CMB-EE-hiL-binned_R2.02.txt",unpack=True,usecols=(0,3,4))
+l_TT_low,Dl_TT_low,err_TT_low= np.loadtxt("/home1/brendazh/Repos/darkmatter-hubble-summer2020/DMPlots/data/CMB/COM_PowerSpect_CMB-TT-loL-full_R2.02.txt",unpack=True,usecols=(0,1,2), skiprows=3)
+l_TE_low,Dl_TE_low,err_TE_low= np.loadtxt("/home1/brendazh/Repos/darkmatter-hubble-summer2020/DMPlots/data/CMB/COM_PowerSpect_CMB-TE-loL-full_R2.02.txt",unpack=True,usecols=(0,1,2), skiprows=3)
+l_TT_high,Dl_TT_high,err_TT_high= np.loadtxt("/home1/brendazh/Repos/darkmatter-hubble-summer2020/DMPlots/data/CMB/COM_PowerSpect_CMB-TT-hiL-binned_R2.02.txt",unpack=True,usecols=(0,3,4), skiprows=3)
+l_TE_high,Dl_TE_high,err_TE_high= np.loadtxt("/home1/brendazh/Repos/darkmatter-hubble-summer2020/DMPlots/data/CMB/COM_PowerSpect_CMB-TE-hiL-binned_R2.02.txt",unpack=True,usecols=(0,3,4), skiprows=3)
+l_EE_low,Dl_EE_low,err_EE_low= np.loadtxt("/home1/brendazh/Repos/darkmatter-hubble-summer2020/DMPlots/data/CMB/COM_PowerSpect_CMB-EE-loL-full_R2.02.txt",unpack=True,usecols=(0,1,2), skiprows=3)
+l_EE_high,Dl_EE_high,err_EE_high= np.loadtxt("/home1/brendazh/Repos/darkmatter-hubble-summer2020/DMPlots/data/CMB/COM_PowerSpect_CMB-EE-hiL-binned_R2.02.txt",unpack=True,usecols=(0,3,4), skiprows=3)
 # lmin_phiphi,lmax_phiphi,cl_phiphi,err_phiphi= np.loadtxt("/Users/poulin/Dropbox/Labo/ProgrammeDarkAges/error_Planck/agressive_lensing.csv",unpack=True)
 
 # In[ ]:
