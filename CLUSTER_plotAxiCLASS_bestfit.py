@@ -275,7 +275,7 @@ for i in range(var_num):
     dashes=dashes_array[i]
     #
     l=[]
-    print( ' * Compute with %s=%d'%(var_name1,n[I]))
+    print( ' * Compute with %s=%d'%(var_name1,n[i]))
     #
     # deal with colors and legends
     #
