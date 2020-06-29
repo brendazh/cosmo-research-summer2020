@@ -850,7 +850,7 @@ ax_TT_log.errorbar(l_TT_high, Dl_TT_high*conversion1/fTT(l_TT_high)-1, yerr=err_
 ax_TT_log.errorbar(l_TT_low, Dl_TT_low*conversion2/fTT(l_TT_low)-1, yerr=err_TT_low*conversion2/fTT(l_TT_low), fmt='.',color='blue')
 ax_EE_log.errorbar(l_EE_high, Dl_EE_high*conversion3/fEE(l_EE_high)-1, yerr=err_EE_high*conversion3/fEE(l_EE_high), fmt='.',color='blue')
 ax_EE_log.errorbar(l_EE_low, Dl_EE_low*conversion4/fEE(l_EE_low)-1, yerr=err_EE_low*conversion4/fEE(l_EE_low), fmt='.',color='blue')
-ax_TE_log.errorbar(l_TE_high, (Dl_TE_high*conversion5-fTE(l_TE_high))/np.sqrt(fTT(l_TE_high)*fEE(l_TE_high)+fTE(l_TE_high)**2), yerr=err_TE_high*conversion5/np.sqrt(fTT(l_TE_high)*fEE(l_TE_high)+fTE(l_TE_high)**2), fmt='.',color='blue')
+#ax_TE_log.errorbar(l_TE_high, (Dl_TE_high*conversion5-fTE(l_TE_high))/np.sqrt(fTT(l_TE_high)*fEE(l_TE_high)+fTE(l_TE_high)**2), yerr=err_TE_high*conversion5/np.sqrt(fTT(l_TE_high)*fEE(l_TE_high)+fTE(l_TE_high)**2), fmt='.',color='blue')
 #ax_TE_log.errorbar(l_TE_low, (Dl_TE_low*conversion6-fTE(l_TE_low))/np.sqrt(fEE(l_TE_low)*fTT(l_TE_low)+fTE(l_TE_low)**2), yerr=err_TE_low*conversion6/np.sqrt(fTT(l_TE_low)*fEE(l_TE_low)+fTE(l_TE_low)**2), fmt='.',color='blue')
 
 
