@@ -562,7 +562,7 @@ for i in range(var_num):
     sigma_CV = np.sqrt(clTT_LCDM*clEE_LCDM+clTE_LCDM**2)
     print(((clTE)-(clTE_LCDM))/sigma_CV,np.sqrt(1/(2*ll+1)),np.sqrt(clTT_LCDM*clEE_LCDM+clTE_LCDM**2))
     ax_TT_log.plot(ll,(clTT-clTT_LCDM)/clTT_LCDM,var_color,lw=2,dashes=dashes,label=var_legend)
-    ax_TE_log.plot(ll,((clTE)-(clTE_LCDM))/sigma_CV,var_color,lw=2,dashes=dashes,label=var_legend)
+    #ax_TE_log.plot(ll,((clTE)-(clTE_LCDM))/sigma_CV,var_color,lw=2,dashes=dashes,label=var_legend)
     ax_EE_log.plot(ll,(clEE-clEE_LCDM)/clEE_LCDM,var_color,lw=2,dashes=dashes,label=var_legend)
     # ax_TT_log.plot(ll,(clTT-clTT_LCDM)/clTT_LCDM,var_color,lw=2,dashes=dashes,label=var_legend)
     # ax_TE_log.plot(ll,((clTE)-(clTE_LCDM))/sigma_CV,var_color,lw=2,dashes=dashes,label=var_legend)
