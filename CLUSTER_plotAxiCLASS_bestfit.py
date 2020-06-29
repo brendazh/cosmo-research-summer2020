@@ -989,8 +989,8 @@ while step < l_max:
         #         2*binned_cosmic_variance(result,int(step),width),          # height
         #         color='r',
         #         alpha=0.1
-            )
-        )
+        #     )
+        # )
         # print(j, step)
 # plt.savefig('AxiCLASS_n2_TTTEEE_LargevsbestfitTheta.pdf', bbox_inches='tight')
 plt.savefig('AxiCLASS_n3_v6.pdf', bbox_inches='tight')
