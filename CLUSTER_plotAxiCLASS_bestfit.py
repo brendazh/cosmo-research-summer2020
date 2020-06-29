@@ -634,18 +634,18 @@ for i in range(var_num):
 
 ###NEW SCALES###
 ax_TT_log.set_yscale('linear')
-ax_TT_log.set_xlim((30,2500))
+ax_TT_log.set_xlim((30,700))
 ax_TT_log.set_yticks([-0.08, -0.04, 0, 0.04, 0.08])
 ax_TT_log.set_ylim((-0.12,0.12))
 
 ax_EE_log.set_xscale('linear')
-ax_EE_log.set_xlim((30,2500))
+ax_EE_log.set_xlim((30,700))
 ax_EE_log.set_ylim((-0.12,0.12))
 ax_EE_log.set_yticks([-0.08, -0.04, 0, 0.04, 0.08])
 
-ax_TE_log.set_xscale('linear')
-ax_TE_log.set_xlim((2,30))
-ax_TE_log.set_ylim((-0.12,0.12))
+# ax_TE_log.set_xscale('linear')
+# ax_TE_log.set_xlim((2,30))
+# ax_TE_log.set_ylim((-0.12,0.12))
 
 # ax_TT_log.set_xticks([2., 10.])
 # ax_EE_log.set_xticks([2., 10.])
@@ -993,7 +993,7 @@ while step < l_max:
         )
         # print(j, step)
 # plt.savefig('AxiCLASS_n2_TTTEEE_LargevsbestfitTheta.pdf', bbox_inches='tight')
-plt.savefig('AxiCLASS_n3_v4.pdf', bbox_inches='tight')
+plt.savefig('AxiCLASS_n3_v5.pdf', bbox_inches='tight')
 
 
 # In[ ]:
