@@ -177,15 +177,15 @@ if plot_pk == True:
     ax_Pk.set_ylabel(r'$\frac{\Delta P(k)}{P(k)^{\Lambda{\rm CDM}}}$',fontsize=15)
 if plot_pk == False:
     ax_EE_log = plt.subplot(313)
-    ax_TE_log = plt.subplot(312)
+    # ax_TE_log = plt.subplot(312)
     ax_TT_log = plt.subplot(311)
 
 plt.subplots_adjust(hspace=0.4)
 plt.setp(ax_TT_log.get_xticklabels(), fontsize=15)
-plt.setp(ax_TE_log.get_xticklabels(), fontsize=15)
+# plt.setp(ax_TE_log.get_xticklabels(), fontsize=15)
 plt.setp(ax_EE_log.get_xticklabels(), fontsize=15)
 plt.setp(ax_TT_log.get_yticklabels(), fontsize=15)
-plt.setp(ax_TE_log.get_yticklabels(), fontsize=15)
+#plt.setp(ax_TE_log.get_yticklabels(), fontsize=15)
 plt.setp(ax_EE_log.get_yticklabels(), fontsize=15)
 # plt.subplots_adjust(hspace=0)
 # divider = make_axes_locatable(ax_TT_log)
@@ -635,13 +635,13 @@ for i in range(var_num):
 ###NEW SCALES###
 ax_TT_log.set_yscale('linear')
 ax_TT_log.set_xlim((30,700))
-ax_TT_log.set_yticks([-0.08, -0.04, 0, 0.04, 0.08])
+ax_TT_log.set_yticks([-0.04, -0.02, 0, 0.02, 0.04])
 ax_TT_log.set_ylim((-0.12,0.12))
 
 ax_EE_log.set_xscale('linear')
 ax_EE_log.set_xlim((30,700))
 ax_EE_log.set_ylim((-0.12,0.12))
-ax_EE_log.set_yticks([-0.08, -0.04, 0, 0.04, 0.08])
+ax_EE_log.set_yticks([-0.06, -0.03, 0, 0.03, 0.06])
 
 # ax_TE_log.set_xscale('linear')
 # ax_TE_log.set_xlim((2,30))
@@ -656,16 +656,16 @@ ax_EE_log.set_yticks([-0.08, -0.04, 0, 0.04, 0.08])
 
 ax_TT_log.spines['right'].set_visible(False)
 ax_EE_log.yaxis.set_ticks_position('left')
-ax_TE_log.yaxis.set_ticks_position('left')
+#ax_TE_log.yaxis.set_ticks_position('left')
 ax_TT_log.spines['right'].set_visible(False)
 ax_EE_log.yaxis.set_ticks_position('left')
-ax_TE_log.yaxis.set_ticks_position('left')
+#ax_TE_log.yaxis.set_ticks_position('left')
 ax_TT_log.tick_params('both', length=10, width=1, which='major')
 ax_TT_log.tick_params('both', length=5, width=1, which='minor')
 ax_EE_log.tick_params('both', length=10, width=1, which='major')
 ax_EE_log.tick_params('both', length=5, width=1, which='minor')
-ax_TE_log.tick_params('both', length=10, width=1, which='major')
-ax_TE_log.tick_params('both', length=5, width=1, which='minor')
+#ax_TE_log.tick_params('both', length=10, width=1, which='major')
+#ax_TE_log.tick_params('both', length=5, width=1, which='minor')
 
 # axLin.plot(ellCIP, CIPTT,color="cyan", linestyle='-',lw=2)
 # axLin.plot(ellCIP, CIPTT2,color="red", linestyle='-',lw=2)
@@ -851,7 +851,7 @@ ax_TT_log.errorbar(l_TT_low, Dl_TT_low*conversion2/fTT(l_TT_low)-1, yerr=err_TT_
 ax_EE_log.errorbar(l_EE_high, Dl_EE_high*conversion3/fEE(l_EE_high)-1, yerr=err_EE_high*conversion3/fEE(l_EE_high), fmt='.',color='blue')
 ax_EE_log.errorbar(l_EE_low, Dl_EE_low*conversion4/fEE(l_EE_low)-1, yerr=err_EE_low*conversion4/fEE(l_EE_low), fmt='.',color='blue')
 ax_TE_log.errorbar(l_TE_high, (Dl_TE_high*conversion5-fTE(l_TE_high))/np.sqrt(fTT(l_TE_high)*fEE(l_TE_high)+fTE(l_TE_high)**2), yerr=err_TE_high*conversion5/np.sqrt(fTT(l_TE_high)*fEE(l_TE_high)+fTE(l_TE_high)**2), fmt='.',color='blue')
-ax_TE_log.errorbar(l_TE_low, (Dl_TE_low*conversion6-fTE(l_TE_low))/np.sqrt(fEE(l_TE_low)*fTT(l_TE_low)+fTE(l_TE_low)**2), yerr=err_TE_low*conversion6/np.sqrt(fTT(l_TE_low)*fEE(l_TE_low)+fTE(l_TE_low)**2), fmt='.',color='blue')
+#ax_TE_log.errorbar(l_TE_low, (Dl_TE_low*conversion6-fTE(l_TE_low))/np.sqrt(fEE(l_TE_low)*fTT(l_TE_low)+fTE(l_TE_low)**2), yerr=err_TE_low*conversion6/np.sqrt(fTT(l_TE_low)*fEE(l_TE_low)+fTE(l_TE_low)**2), fmt='.',color='blue')
 
 
 
@@ -877,10 +877,10 @@ ax_EE_log.set_ylabel(r'$\frac{\Delta C_\ell^\mathrm{EE}}{C_\ell^\mathrm{EE}}$',f
 ax_TT_log.legend(frameon=False,prop={'size':12},loc='upper center',borderaxespad=0.)
 
 # ax_TE.axis([2,2500,-0.06,0.06])
-ax_TE_log.set_xlabel(r'$\ell$',fontsize=20,labelpad=-20)
+#ax_TE_log.set_xlabel(r'$\ell$',fontsize=20,labelpad=-20)
 # ax_TE_lin.text(200,-0.1,r'$\frac{\Delta C_\ell^\mathrm{TE}}{C_\ell^\mathrm{TE}(\Lambda{\rm CDM})}$',fontsize=20)
 # ax_TE_log.set_ylabel(r'$\Delta C_\ell^\mathrm{TE}/C_\ell^\mathrm{TE}(\Lambda{\rm CDM})$',fontsize=19)
-ax_TE_log.set_ylabel(r'$\frac{\Delta C_\ell^\mathrm{TE}}{\sqrt{C_\ell^\mathrm{EE}C_\ell^\mathrm{TT}+(C_\ell^\mathrm{TE})^2}}$',fontsize=19)
+#ax_TE_log.set_ylabel(r'$\frac{\Delta C_\ell^\mathrm{TE}}{\sqrt{C_\ell^\mathrm{EE}C_\ell^\mathrm{TT}+(C_\ell^\mathrm{TE})^2}}$',fontsize=19)
 
 
 # fig_TT.savefig('spectra_nalp_zc1e3_ErrorPlanck.pdf')
@@ -982,7 +982,7 @@ while step < l_max:
         #         alpha=0.1
         #     )
         # )
-        ax_TE_log.add_patch(
+        #ax_TE_log.add_patch(
             patches.Rectangle(
                 (int(step), -1*binned_cosmic_variance(result,int(step),width)),   # (x,y)
                 width,          # width
