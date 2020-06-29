@@ -636,11 +636,11 @@ for i in range(var_num):
 ax_TT_log.set_yscale('linear')
 ax_TT_log.set_xlim((30,700))
 ax_TT_log.set_yticks([-0.04, -0.02, 0, 0.02, 0.04])
-ax_TT_log.set_ylim((-0.12,0.12))
+ax_TT_log.set_ylim((-0.06,0.06))
 
 ax_EE_log.set_xscale('linear')
 ax_EE_log.set_xlim((30,700))
-ax_EE_log.set_ylim((-0.12,0.12))
+ax_EE_log.set_ylim((-0.09,0.09))
 ax_EE_log.set_yticks([-0.06, -0.03, 0, 0.03, 0.06])
 
 # ax_TE_log.set_xscale('linear')
