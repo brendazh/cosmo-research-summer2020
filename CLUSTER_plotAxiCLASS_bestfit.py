@@ -862,19 +862,19 @@ ax_EE_log.errorbar(l_EE_low, Dl_EE_low*conversion4/fEE(l_EE_low)-1, yerr=err_EE_
 # ax_TT.set_xlabel(r'$\ell$',fontsize=35)
 # ax_TT_lin.text(1050,0.02,r'$\frac{\Delta C_\ell^\mathrm{TT}}{C_\ell^\mathrm{TT}(\Lambda{\rm CDM})}$',fontsize=20)
 # ax_TT_log.set_ylabel(r'$\Delta C_\ell^\mathrm{TT}/C_\ell^\mathrm{TT}(\Lambda{\rm CDM})$',fontsize=17)
-ax_TT_log.set_ylabel(r'$\frac{\Delta C_\ell^\mathrm{TT}}{C_\ell^\mathrm{TT}}$',fontsize=19)
+ax_TT_log.set_ylabel(r'$\frac{\Delta C_\ell^\mathrm{TT}}{C_\ell^\mathrm{TT}}$',fontsize=14)
 
 # ax_Pk.legend(frameon=False,prop={'size':30},loc='upper left',borderaxespad=0.)
-ax_TT_log.set_xlabel(r'$\ell$',fontsize=20)
+ax_TT_log.set_xlabel(r'$\ell$',fontsize=15)
 # ax_EE_lin.legend(frameon=False,prop={'size':12},loc='upper right',borderaxespad=0.)
 
 # ax_EE.axis([2,2500,-0.06,0.06])
-ax_EE_log.set_xlabel(r'$\ell$',fontsize=20)
+ax_EE_log.set_xlabel(r'$\ell$',fontsize=15)
 # ax_EE_lin.text(200,-0.1,r'$\frac{\Delta C_\ell^\mathrm{EE}}{C_\ell^\mathrm{EE}(\Lambda{\rm CDM})}$',fontsize=20)
 # ax_EE_log.set_ylabel(r'$\Delta C_\ell^\mathrm{EE}/C_\ell^\mathrm{EE}(\Lambda{\rm CDM})$',fontsize=19)
-ax_EE_log.set_ylabel(r'$\frac{\Delta C_\ell^\mathrm{EE}}{C_\ell^\mathrm{EE}}$',fontsize=19)
+ax_EE_log.set_ylabel(r'$\frac{\Delta C_\ell^\mathrm{EE}}{C_\ell^\mathrm{EE}}$',fontsize=14)
 
-ax_TT_log.legend(frameon=False,prop={'size':12},loc='upper center',borderaxespad=0.)
+ax_TT_log.legend(frameon=False,prop={'size':12},loc='upper center')
 
 # ax_TE.axis([2,2500,-0.06,0.06])
 #ax_TE_log.set_xlabel(r'$\ell$',fontsize=20,labelpad=-20)
