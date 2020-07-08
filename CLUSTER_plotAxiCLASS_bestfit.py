@@ -176,9 +176,9 @@ if plot_pk == True:
     ax_Pk.set_xlabel(r'$k \,\,\,\, [h/\mathrm{Mpc}]$',fontsize=15)
     ax_Pk.set_ylabel(r'$\frac{\Delta P(k)}{P(k)^{\Lambda{\rm CDM}}}$',fontsize=15)
 if plot_pk == False:
-    ax_EE_log = plt.subplot(1)
+    ax_EE_log = plt.subplot(212)
     # ax_TE_log = plt.subplot(312)
-    ax_TT_log = plt.subplot(2)
+    ax_TT_log = plt.subplot(211)
 
 plt.subplots_adjust(hspace=0.4)
 plt.setp(ax_TT_log.get_xticklabels(), fontsize=15)
