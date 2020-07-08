@@ -660,10 +660,10 @@ ax_EE_log.yaxis.set_ticks_position('left')
 ax_TT_log.spines['right'].set_visible(False)
 ax_EE_log.yaxis.set_ticks_position('left')
 #ax_TE_log.yaxis.set_ticks_position('left')
-ax_TT_log.tick_params('both', length=10, width=1, which='major')
-ax_TT_log.tick_params('both', length=5, width=1, which='minor')
-ax_EE_log.tick_params('both', length=10, width=1, which='major')
-ax_EE_log.tick_params('both', length=5, width=1, which='minor')
+ax_TT_log.tick_params('both', which='major')
+ax_TT_log.tick_params('both', which='minor')
+ax_EE_log.tick_params('both', which='major')
+ax_EE_log.tick_params('both', which='minor')
 #ax_TE_log.tick_params('both', length=10, width=1, which='major')
 #ax_TE_log.tick_params('both', length=5, width=1, which='minor')
 
@@ -865,11 +865,11 @@ ax_EE_log.errorbar(l_EE_low, Dl_EE_low*conversion4/fEE(l_EE_low)-1, yerr=err_EE_
 ax_TT_log.set_ylabel(r'$\frac{\Delta C_\ell^\mathrm{TT}}{C_\ell^\mathrm{TT}}$',fontsize=19)
 
 # ax_Pk.legend(frameon=False,prop={'size':30},loc='upper left',borderaxespad=0.)
-ax_TT_log.set_xlabel(r'$\ell$',fontsize=20,labelpad=-20)
+ax_TT_log.set_xlabel(r'$\ell$',fontsize=20)
 # ax_EE_lin.legend(frameon=False,prop={'size':12},loc='upper right',borderaxespad=0.)
 
 # ax_EE.axis([2,2500,-0.06,0.06])
-ax_EE_log.set_xlabel(r'$\ell$',fontsize=20,labelpad=-20)
+ax_EE_log.set_xlabel(r'$\ell$',fontsize=20)
 # ax_EE_lin.text(200,-0.1,r'$\frac{\Delta C_\ell^\mathrm{EE}}{C_\ell^\mathrm{EE}(\Lambda{\rm CDM})}$',fontsize=20)
 # ax_EE_log.set_ylabel(r'$\Delta C_\ell^\mathrm{EE}/C_\ell^\mathrm{EE}(\Lambda{\rm CDM})$',fontsize=19)
 ax_EE_log.set_ylabel(r'$\frac{\Delta C_\ell^\mathrm{EE}}{C_\ell^\mathrm{EE}}$',fontsize=19)
@@ -993,7 +993,7 @@ while step < l_max:
         # )
         # print(j, step)
 # plt.savefig('AxiCLASS_n2_TTTEEE_LargevsbestfitTheta.pdf', bbox_inches='tight')
-plt.savefig('AxiCLASS_n3_v6.pdf', bbox_inches='tight')
+plt.savefig('AxiCLASS_n3_v1.pdf', bbox_inches='tight')
 
 
 # In[ ]:
