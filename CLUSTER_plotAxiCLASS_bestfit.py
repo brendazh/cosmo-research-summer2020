@@ -27,7 +27,7 @@ rc('font',**{'family':'serif','serif':['Times']})
 rc('text', usetex=True)
 # matplotlib.rc('font', **font)
 matplotlib.mathtext.rcParams['legend.fontsize']='medium'
-plt.rcParams["figure.figsize"] = [8.0,6.0]
+#plt.rcParams["figure.figsize"] = [8.0,6.0]
 
 
 l_TT_low,Dl_TT_low,err_TT_low= np.loadtxt("/home1/brendazh/Repos/darkmatter-hubble-summer2020/DMPlots/data/CMB/COM_PowerSpect_CMB-TT-loL-full_R2.02.txt",unpack=True,usecols=(0,1,2), skiprows=3)
@@ -176,9 +176,9 @@ if plot_pk == True:
     ax_Pk.set_xlabel(r'$k \,\,\,\, [h/\mathrm{Mpc}]$',fontsize=15)
     ax_Pk.set_ylabel(r'$\frac{\Delta P(k)}{P(k)^{\Lambda{\rm CDM}}}$',fontsize=15)
 if plot_pk == False:
-    ax_EE_log = plt.subplot(313)
+    ax_EE_log = plt.subplot()
     # ax_TE_log = plt.subplot(312)
-    ax_TT_log = plt.subplot(311)
+    ax_TT_log = plt.subplot()
 
 plt.subplots_adjust(hspace=0.4)
 plt.setp(ax_TT_log.get_xticklabels(), fontsize=15)
@@ -993,7 +993,7 @@ while step < l_max:
         # )
         # print(j, step)
 # plt.savefig('AxiCLASS_n2_TTTEEE_LargevsbestfitTheta.pdf', bbox_inches='tight')
-plt.savefig('AxiCLASS_n3_v1.pdf', bbox_inches='tight')
+plt.savefig('AxiCLASS_n3_v1.pdf')
 
 
 # In[ ]:
