@@ -874,7 +874,7 @@ ax_EE_log.set_xlabel(r'$\ell$',fontsize=15)
 # ax_EE_log.set_ylabel(r'$\Delta C_\ell^\mathrm{EE}/C_\ell^\mathrm{EE}(\Lambda{\rm CDM})$',fontsize=19)
 ax_EE_log.set_ylabel(r'$\frac{\Delta C_\ell^\mathrm{EE}}{C_\ell^\mathrm{EE}}$',fontsize=14)
 
-ax_TT_log.legend(frameon=False,prop={'size':12},loc='upper center')
+ax_TT_log.legend(frameon=False,prop={'size':12},loc='upper center',borderaxespad=0.)
 
 # ax_TE.axis([2,2500,-0.06,0.06])
 #ax_TE_log.set_xlabel(r'$\ell$',fontsize=20,labelpad=-20)
@@ -993,7 +993,7 @@ while step < l_max:
         # )
         # print(j, step)
 # plt.savefig('AxiCLASS_n2_TTTEEE_LargevsbestfitTheta.pdf', bbox_inches='tight')
-plt.savefig('AxiCLASS_n3_v1.pdf')
+plt.savefig('AxiCLASS_n3_v1.pdf', bbox_inches='tight')
 
 
 # In[ ]:

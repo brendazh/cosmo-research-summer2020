@@ -1,34 +1,31 @@
 theory:
   classy:
-    path: /home1/brendazh/Repos/AxiCLASS/
+    path: /Users/brendazhou/Cosmo/Repositories/AxiCLASS/
     extra_args:
       non linear: hmcode
       hmcode_min_k_max: 20
       N_ncdm: 1
       N_ur: 2.0328
 likelihood:
+#   sn.pantheon: null
+#   bao.sixdf_2011_bao: null
+#   bao.sdss_dr7_mgs: null
+#   bao.sdss_dr12_consensus_bao: null
   planck_2018_lowl.TT: null
   planck_2018_lowl.EE: null
   planck_2018_highl_plik.TTTEEE_lite: null
   planck_2018_lensing.clik: null
 params:
-#   n_axion:
-#     value: 2
+  n_axion:
+    value: 2
   log10_axion_ac:
     prior:
-      min: -4.5
-      max: -3.5
+      min: -4.4
+      max: -3.6
     ref:
       dist: norm
-      loc: -4.13
+      loc: -3.7
       scale: 0.1
-#   log10_fraction_axion_ac:
-#     prior:
-#       min: -3
-#       max: 3
-#     ref:
-#       min: -2
-#       max: 2 
   logA:
     prior:
       min: 1.61
@@ -134,14 +131,9 @@ params:
     latex: '{\rm{Age}}/\mathrm{Gyr}'
   rs_drag:
     latex: r_\mathrm{drag}
-  scf_tuning_index:
-    value: 0
-  scf_parameters:
-    value: 10000
 sampler:
   mcmc:
-    covmat: auto
+    covmat: /Users/brendazhou/Cosmo/cobaya/data/planck_supp_data_and_covmats/covmats/base_plikHM_TTTEEE_lowl_lowE_lensing_post_BAO_Pantheon18.covmat
     drag: true
     oversample_power: 0.4
     proposal_scale: 1.9
-output: chains/log10ac
