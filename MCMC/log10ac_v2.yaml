@@ -1,6 +1,7 @@
 theory:
   classy:
-    path: /home1/brendazh/Repos/AxiCLASS/
+    path: /Users/brendazhou/Cosmo/Repositories/AxiCLASS/
+    #path: /home1/brendazh/Repos/AxiCLASS/
     extra_args:
       non linear: hmcode
       hmcode_min_k_max: 20
@@ -16,8 +17,8 @@ params:
 #     value: 2
   log10_axion_ac:
     prior:
-      min: -4.5
-      max: -3.5
+      min: -4.4
+      max: -3.6
     ref:
       dist: norm
       loc: -4.13
@@ -140,8 +141,9 @@ params:
     value: 10000
 sampler:
   mcmc:
-    covmat: /home1/brendazh/data/planck_supp_data_and_covmats/covmats/base_plikHM_TTTEEE_lowl_lowE_lensing.covmat
+    #covmat: /home1/brendazh/data/planck_supp_data_and_covmats/covmats/base_plikHM_TTTEEE_lowl_lowE_lensing.covmat
+    covmat: /Users/brendazh/Cosmo/Repositories/data/planck_supp_data_and_covmats/covmats/base_plikHM_TTTEEE_lowl_lowE_lensing.covmat
     drag: true
     oversample_power: 0.4
     proposal_scale: 1.9
-output: chains/log10ac
+output: chains/log10ac_v2

@@ -1,6 +1,6 @@
 from cobaya.yaml import yaml_load_file
 
-info_from_yaml = yaml_load_file("log10ac.yaml")
+info_from_yaml = yaml_load_file("log10ac_v2.yaml")
 
 from cobaya.run import run
 
