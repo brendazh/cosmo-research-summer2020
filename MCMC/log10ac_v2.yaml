@@ -23,13 +23,13 @@ params:
       dist: norm
       loc: -4.13
       scale: 0.1
-  log10_fraction_axion_ac:
-    prior:
-      min: -3
-      max: 3
-    ref:
-      min: -2
-      max: 2 
+#  log10_fraction_axion_ac:
+#    prior:
+#      min: -3
+#      max: 3
+#    ref:
+#      min: -2
+#      max: 2 
   logA:
     prior:
       min: 1.61
